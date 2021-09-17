@@ -4,6 +4,7 @@ void setup() {
 }
 void draw() {
   int c = 0;
+  boolean other = true;
   background(255);
   for (int y = 0; y <=500; y+=20){
     if (c % 2 ==1 ){
@@ -15,8 +16,17 @@ void draw() {
         c++;
     }
       for (int x = 0; x <=500; x+=30){
-        scale(x,y);
+        if (other == true){
+          scale(x,y);
+        }
+        else
+        scale(x-8,y-8);
       }
+     if (other == true)
+       other = false;
+     else
+       other=true;
+      
     }
   }  
 void scale(int x, int y) {
