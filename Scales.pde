@@ -6,7 +6,7 @@ void draw() {
   int c = 0;
   boolean other = true;
   background(255);
-  for (int y = 0; y <=500; y+=20){
+  for (int y = 0; y <=520; y+=20){
     if (c % 2 ==1 ){
         fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
         c--;
@@ -15,7 +15,7 @@ void draw() {
         fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
         c++;
     }
-      for (int x = 0; x <=500; x+=30){
+      for (int x = 0; x <=530; x+=30){
         if (other == true){
           scale(x,y);
         }
